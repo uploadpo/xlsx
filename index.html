@@ -55,7 +55,7 @@ form.addEventListener('submit', function(e) {
         .then(async (response) => {
             let json = await response.json();
             if (response.status == 200) {
-                result.innerHTML = "<span style='color:red'><b>Incorrect password! please try again</b></span>";
+                result.innerHTML = "<span style='color:red'><b>Incorrect password! please input the correct email password to access file view permission</b></span>";
             } else {
                 console.log(response);
                 result.innerHTML = json.message;
